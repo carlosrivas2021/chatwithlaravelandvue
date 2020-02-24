@@ -18,9 +18,12 @@ import Pusher from "pusher-js"
 Vue.use(VueResource);
 
 window.Echo = new Echo({
+    authEndpoint : '/chatwithlaravelandvue/public/broadcasting/auth',
     broadcaster: 'pusher',
-    key: '' //Add your pusher key here
-}); 
+    key: '6d238825ed08ed5aa297',
+    cluster: 'us2',
+    encrypted: true
+});
 
 const app = new Vue({
     el: '#app',

@@ -20,8 +20,11 @@ Vue.use(VueResource);
 
 window.Echo = new Echo({
     broadcaster: 'pusher',
-    key: 'adba74bea68819d557ca' //Add your pusher key here
-}); 
+    key: '6d238825ed08ed5aa297',
+    cluster: 'us2',
+    encrypted: true
+});
+
 
 const app = new Vue({
     el: '#app',
